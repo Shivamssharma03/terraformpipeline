@@ -29,7 +29,7 @@ resource "aws_instance" "this" {
   vpc_security_group_ids = [aws_security_group.ssh.id]
 
   tags = {
-    Name = "${var.env}-ec2"
+    Name        = "${var.env}-ec2"
     Environment = var.env
   }
 }
